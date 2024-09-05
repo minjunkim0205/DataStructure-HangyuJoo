@@ -8,7 +8,8 @@
 
 ## TODO
 
-- [ ] ???
+- [ ] [Example04.java](./Example04.java) 뉴클리드 호재법으로 최대 공약수 코드 구현
+- [ ] [Example06.java](./Example06.java) 버블 정렬으로 정렬 코드 구현
 
 ## Contents
 
@@ -58,5 +59,44 @@
 
 - ## 문자열(String class)  
 
-    >  
+    ```java
+    String str = "Hello java";
+    ```
 
+- ## 뉴클리드 호제법
+
+    > 최대공약수 구하기  
+    ```java
+    
+    ```
+
+- ## 배열
+
+    > 정수형 배열
+    ```java
+    int[] v = new int[10];
+    ```
+
+- ## Swap
+
+    ```java
+    int a = 10;
+    int b = 6;
+    int temp;
+    temp = a;
+    a = b;
+    b = temp;
+    ```
+
+- ## 버블 정렬
+
+    ```java
+    
+    ```
+
+- ## 2차원 배열
+
+    > 정수형 2차원 배열 (5 x 5 사이즈)
+    ```java
+    int[][] v = new int[5][5];
+    ```
