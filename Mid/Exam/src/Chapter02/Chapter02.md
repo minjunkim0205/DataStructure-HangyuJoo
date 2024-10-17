@@ -34,5 +34,9 @@
 - 피보나치 수열 (Fibonacci sequence)  
   - 코드  
     > [Chapter02.FibonacciSequence.java](./FibonacciSequence.java)  
-  -  
-    > 
+  - 각 항은 바로 직전 두 항의 합으로 만들어짐  
+    > n = 0 : f_0 = 0  
+    > n = 1 : f_1 = 1  
+    > n >= 2 : f_n = f_(n-1) + f_(n-2)  
+
+## 여유가 있다면 -> 성능 분석 (2) 장도 정리 할것. 
