@@ -1,0 +1,66 @@
+package poly2;
+
+public class Poly_Term {
+	private static final int MAX = 10;
+	private Term[] terms;
+	private int noOfTerms;
+
+	public Poly_Term() {
+		terms = new Term[MAX];
+		noOfTerms = 0;
+	}
+
+	public boolean isPZero() {
+		if (noOfTerms == 0)
+			return true;
+		else
+			return false;
+	}
+
+	public int coef(int e) {
+		for (int i = 0; i < noOfTerms; i++) {
+			if (terms[i].getExp() == e)
+				return terms[i].getCoef();
+		}
+		return 0;
+	}
+
+	public int maxExp() {
+		if (noOfTerms == 0)
+			return -1;
+		else
+			return terms[0].getExp();
+	}
+
+	public void addTerm(int c, int e) {
+	// 주어진 계수 c와 지수 e를 사용하여 새로운 항을 다항식에 추가하는 메소드
+            // 이 메소드는 새로운 항을 알맞은 위치에 추가하고 noOfTerms를 업데이트 해야 함
+	// tip) 새로운 항의 지수 e보다 작은 지수를 가진 항들을 한 칸씩 오른쪽으로 이동
+	}
+
+	private int findIndex(int e) {
+		for (int i = 0; i < noOfTerms; i++)
+			if (terms[i].getExp() == e)
+				return i;
+		return -1;
+	}
+
+	public void delTerm(int e) {
+	// 주어진 지수 e를 갖는 항을 다항식에서 삭제하는 메소드
+            // 해당 항을 찾아 배열에서 제거하고, 이후 항들을 앞으로 이동시켜 빈 공간을 없애야 함
+            // 삭제 후 noOfTerms를 업데이트 해야 함
+	}
+
+	public void printResult() {
+		for (int i = 0; i < noOfTerms; i++) {
+			if (i == noOfTerms - 1) {
+				System.out.println(terms[i].getCoef());
+				break;
+			}
+			System.out.print(terms[i].getCoef() + "x^" + terms[i].getExp() + " + ");
+
+		}
+	}
+
+}
+

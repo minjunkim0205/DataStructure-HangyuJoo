@@ -1,0 +1,59 @@
+package poly;
+
+public class Poly {
+	private static final int MAX = 30;
+	private int[] coef;
+	private int degree;
+	
+	public Poly() {
+		coef = new int[MAX + 1];
+		for(int i = 0; i <= MAX; i ++)
+			coef[i] = 0;
+		degree = -1;
+	}
+	public boolean isPZero() {
+		return (degree == -1);
+	}
+	
+	public int coef(int e) {
+		return coef[e];
+	}
+	
+	public int maxExp() {
+		return degree;
+	}
+	
+	public boolean addTerm(int c, int e) {
+	// e의 차수에 계수 c를 삽입, degree 변경
+	// 단, coef[e]에 이미 계수가 존재하는 경우에는 계수 c를 삽입하지 않고 false 리턴
+	}
+	
+	public boolean delTerm(int e) {
+	// e의 차수를 갖는 계수를 다항식에서 삭제 (계수를 0으로 만듦), degree 변경
+	}
+	
+	public Poly sMult(int c, int e) {
+	// 현재 다항식에 cx^e를 곱하여 새 다항식을 반환
+	}
+	
+	public Poly polyAdd(Poly poly1) {
+	// 현재 다항식과 다른 다항식 poly1을 더한 결과 다항식을 반환
+		
+	}
+	
+	public Poly polyMult(Poly poly1) {
+	// 현재 다항식과 다른 다항식 poly1을 곱한 결과 다항식을 반환
+	}
+	
+	public void printResult() {
+		for(int i = degree; i >= 0; i--) {
+			if(i == 0) {
+				System.out.println(coef[i]);
+				break;
+			}
+			if(coef[i] != 0) 
+				System.out.print(coef[i] + "x^" + i + " + ");
+		}
+	}
+}
+
